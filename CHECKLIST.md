@@ -28,7 +28,7 @@ Avant toute ligne de code. Objectif : ne plus avoir à réfléchir pendant que t
 - [x] Mettre à jour les scopes dans `commitlint.config.js` :
       `['tables', 'entries', 'roll', 'import', 'export', 'db', 'ui', 'deps']`
 - [x] `npm create vite@latest . -- --template react-ts`
-- [ ] Vérifier que `npm run dev` affiche la page Vite par défaut
+- [x] Vérifier que `npm run dev` affiche la page Vite par défaut
 - [ ] Prettier + ESLint 💬
 - [ ] `lint-staged` sur un hook `pre-commit` 💬
 - [ ] `README.md` : 3 lignes — ce que fait l'app, comment la lancer
