@@ -11,11 +11,10 @@ App web local-only de gestion de tables aléatoires pour JDR.
 
 Avant toute ligne de code. Objectif : ne plus avoir à réfléchir pendant que tu codes.
 
-- [ ] Écrire `examples/figurants.md` à la main (~15 entrées)
+- [X] Écrire `examples/figurants.md` à la main (~15 entrées)
   - titre de la table en `#`, entrées en `- `
   - ce fichier est à la fois **la spec du format d'import** et **la fixture des tests**
-- [ ] Écrire un 2e exemple avec un cas tordu (apostrophes, accents, ligne vide, entrée très longue)
-- [ ] Décider du nom des concepts en anglais dans le code : `RollTable`, `Entry`, `roll`
+- [X] Décider du nom des concepts en anglais dans le code : `RollTable`, `Entry`, `roll`
   - un seul vocabulaire, partout : code, commits, UI
 - [ ] Lister à la main 3 écrans max : Accueil (liste des tables) / Détail table / Import
   - un croquis papier suffit, mais fais-le
@@ -28,7 +27,7 @@ Avant toute ligne de code. Objectif : ne plus avoir à réfléchir pendant que t
 - [x] czg + commitlint + husky (hook `commit-msg`)
 - [x] Mettre à jour les scopes dans `commitlint.config.js` :
       `['tables', 'entries', 'roll', 'import', 'export', 'db', 'ui', 'deps']`
-- [ ] `npm create vite@latest . -- --template react-ts`
+- [x] `npm create vite@latest . -- --template react-ts`
 - [ ] Vérifier que `npm run dev` affiche la page Vite par défaut
 - [ ] Prettier + ESLint 💬
 - [ ] `lint-staged` sur un hook `pre-commit` 💬
