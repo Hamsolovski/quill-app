@@ -29,11 +29,11 @@ Avant toute ligne de code. Objectif : ne plus avoir à réfléchir pendant que t
       `['tables', 'entries', 'roll', 'import', 'export', 'db', 'ui', 'deps']`
 - [x] `npm create vite@latest . -- --template react-ts`
 - [x] Vérifier que `npm run dev` affiche la page Vite par défaut
-- [ ] Prettier + ESLint 💬
-- [ ] `lint-staged` sur un hook `pre-commit` 💬
-- [ ] `README.md` : 3 lignes — ce que fait l'app, comment la lancer
-- [ ] Nettoyer le boilerplate Vite (logos, CSS de démo)
-- [ ] **Commit** : `chore: initialise le projet vite + react + ts`
+- [x] Prettier + ESLint 💬
+- [x] `lint-staged` sur un hook `pre-commit` 💬
+- [x] `README.md` : 3 lignes — ce que fait l'app, comment la lancer
+- [x] Nettoyer le boilerplate Vite (logos, CSS de démo)
+- [x] **Commit** : `chore: initialise le projet vite + react + ts`
 
 ---
 
@@ -42,20 +42,20 @@ Avant toute ligne de code. Objectif : ne plus avoir à réfléchir pendant que t
 Étape volontairement séparée. Tu ne veux pas découvrir Dexie *et* designer ton app
 en même temps — ce sont deux difficultés distinctes.
 
-- [ ] `npm install dexie dexie-react-hooks`
-- [ ] Créer `src/db.ts` avec les deux stores (`rollTables`, `entries`) 💬
+- [x] `npm install dexie dexie-react-hooks`
+- [x] Créer `src/db.ts` avec les deux stores (`rollTables`, `entries`) 💬
   - ⚠️ ne pas nommer un store `tables` : collision avec `Dexie.tables`
   - la string dans `.stores()` ne liste que **les index**, pas tous les champs
-- [ ] Ouvrir l'onglet **Application > IndexedDB** des devtools et repérer la base `quill`
+- [x] Ouvrir l'onglet **Application > IndexedDB** des devtools et repérer la base `quill`
   - garde-le ouvert pendant tout le projet, c'est ton meilleur outil de debug
-- [ ] Dans un composant jetable, faire tourner les 4 opérations à la main :
+- [x] Dans un composant jetable, faire tourner les 4 opérations à la main :
   - [ ] `db.rollTables.add({...})` → vérifier dans les devtools
   - [ ] `db.rollTables.toArray()` → afficher dans la console
   - [ ] `db.entries.where('tableId').equals(1).toArray()` → la requête indexée
   - [ ] `db.rollTables.delete(id)`
-- [ ] Remplacer la lecture par `useLiveQuery()` et constater la réactivité automatique
-- [ ] Écrire `src/seed.ts` : insère 2 tables de démo si la base est vide
-- [ ] Ajouter un bouton temporaire « reset base » (`db.delete()` puis reload) — tu vas t'en servir souvent
+- [x] Remplacer la lecture par `useLiveQuery()` et constater la réactivité automatique
+- [x] Écrire `src/seed.ts` : insère 2 tables de démo si la base est vide
+- [x] Ajouter un bouton temporaire « reset base » (`db.delete()` puis reload) — tu vas t'en servir souvent
 - [ ] **Commit** : `feat(db): met en place le schéma dexie et le seed`
 
 ---

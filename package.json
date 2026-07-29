@@ -33,5 +33,9 @@
     "lint-staged": "^17.2.0",
     "prettier": "^3.9.6",
     "typescript-eslint": "^8.65.0"
+  },
+  "dependencies": {
+    "dexie": "^4.4.4",
+    "dexie-react-hooks": "^4.4.0"
   }
 }
