@@ -3,6 +3,7 @@ import { db } from './db'
 
 export function DexiePlayground() {
   const tables = useLiveQuery(() => db.rollTables.toArray())
+  const entries = useLiveQuery(() => db.entries.toArray())
 
   return (
     <div>
@@ -19,6 +20,8 @@ export function DexiePlayground() {
       >
         delete
       </button>
+      <pre>{JSON.stringify(tables, null, 2)}</pre>
+      <pre>{JSON.stringify(entries, null, 2)}</pre>
     </div>
   )
 }
