@@ -56,7 +56,7 @@ en même temps — ce sont deux difficultés distinctes.
 - [x] Remplacer la lecture par `useLiveQuery()` et constater la réactivité automatique
 - [x] Écrire `src/seed.ts` : insère 2 tables de démo si la base est vide
 - [x] Ajouter un bouton temporaire « reset base » (`db.delete()` puis reload) — tu vas t'en servir souvent
-- [ ] **Commit** : `feat(db): met en place le schéma dexie et le seed`
+- [x] **Commit** : `feat(db): met en place le schéma dexie et le seed`
 
 ---
 
@@ -64,12 +64,12 @@ en même temps — ce sont deux difficultés distinctes.
 
 Le jalon qui compte. Tant qu'il n'est pas franchi, l'architecture est théorique.
 
-- [ ] Routing minimal 💬 (React Router, ou un simple `useState` sur 2 vues — suffisant au début)
-- [ ] Écran **Accueil** : liste des tables du seed
-- [ ] Clic sur une table → écran **Détail** : nom + liste des entrées
-- [ ] Bouton retour
-- [ ] ⭐ **JALON : une table du seed s'affiche dans le navigateur**
-- [ ] **Commit** : `feat(tables): affiche la liste et le détail des tables`
+- [x] Routing minimal 💬 (React Router, ou un simple `useState` sur 2 vues — suffisant au début)
+- [x] Écran **Accueil** : liste des tables du seed
+- [x] Clic sur une table → écran **Détail** : nom + liste des entrées
+- [x] Bouton retour
+- [x] ⭐ **JALON : une table du seed s'affiche dans le navigateur**
+- [x] **Commit** : `feat(tables): affiche la liste et le détail des tables`
 
 ---
 
@@ -77,12 +77,12 @@ Le jalon qui compte. Tant qu'il n'est pas franchi, l'architecture est théorique
 
 C'est la fonctionnalité pour laquelle l'app existe. Elle mérite d'être soignée.
 
-- [ ] `src/lib/roll.ts` — fonction pure, sans React, sans Dexie 💬
-  - [ ] tirer 1 élément
-  - [ ] tirer N éléments **sans remise** (le cas par défaut : pas deux fois le même figurant)
-  - [ ] option **avec remise**
-  - [ ] gérer `weight` (entrées plus ou moins rares)
-  - [ ] cas limites : table vide, N > nombre d'entrées
+- [x] `src/lib/roll.ts` — fonction pure, sans React, sans Dexie 💬
+  - [x] tirer 1 élément
+  - [x] tirer N éléments **sans remise** (le cas par défaut : pas deux fois le même figurant)
+  - [x] option **avec remise**
+  - [x] gérer `weight` (entrées plus ou moins rares)
+  - [x] cas limites : table vide, N > nombre d'entrées
 - [ ] Test unitaire de `roll.ts` 💬 (fonction pure = test facile, et c'est la logique la plus critique)
 - [ ] UI : sélecteur du nombre de résultats + bouton « Tirer »
 - [ ] Affichage du résultat, bien lisible (c'est ce que tu regardes en jeu)
